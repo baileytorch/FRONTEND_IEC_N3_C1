@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
 
-    <link rel="stylesheet" href="/css/eval_1.css">
+    <link rel="stylesheet" href="/css/eval_1.css" type="text/css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/bootstrap.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="pagina_completa">
         <div id="banner_superior" name="barra_superior" class="banner_superior">
             <div id="superior_izquierdo" name="barra_superior">
-                <img id="imagen_superior" src="/assets/img/dota.jpg" alt="dota2">
+                <img id="imagen_superior" src="/assets/img/dota.jpg" alt="dota2" class="imagen_superior">
             </div>
             <div id="superior_derecho" name="barra_superior">
                 <h1>Erick Bailey Rebolledo</h1>
@@ -28,14 +37,151 @@
                 <p id="parrafo_prueba">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis deleniti
                     maiores, quod beatae earum nostrum qui. Aliquam, in officia esse, obcaecati quos ipsam ea atque,
                     possimus facere nobis ducimus?</p>
+
+                <ul>
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                    <li>Cuatro</li>
+                    <li>Cinco</li>
+                </ul>
+
+                <ol>
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                    <li>Cuatro</li>
+                    <li>Cinco</li>
+                </ol>
             </div>
-            <div id="principal_derecha">XD</div>
+            <div id="principal_derecha">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/img/dota.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                    </div>
+                </div>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table style="width: 100%;border: 1px solid #314658;">
+                    <tr>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;">XD</td>
+                        <td style="border: #314658 solid 1px;" colspan="2">XD</td>
+                    </tr>
+                </table>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>@social</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div id="pie_pagina" class="banner_superior">
             <div class="div_pie_pagina">XD</div>
-            <div class="div_pie_pagina">XD</div>
-            <div class="div_pie_pagina">GG</div>
+            <div class="div_pie_pagina">
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+            </div>
+            <div class="div_pie_pagina">
+                <button type="button" class="button">Este es un Botón</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+            </div>
         </div>
     </div>
 
