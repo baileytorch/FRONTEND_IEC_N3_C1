@@ -6,6 +6,10 @@ p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.imagen_superior{
+    opacity: 50%;
+}
+
 #banner_superior{
     border: 1px solid black;
     display: inline-flex;
@@ -49,10 +53,24 @@ p{
 #principal_izquierda{
     width: 25%;
 }
+
+#principal_derecha{
+    padding: 5px;
+}
+
 #pie_pagina{
     display: inline-flex;
 }
 
 .div_pie_pagina{
     margin: auto;
+    padding: 15px;
+}
+
+.button{
+    padding: 5px;
+    border-color: brown;
+    border-radius: 50%;
+    display: block;
+    background-color: aqua;
 }
