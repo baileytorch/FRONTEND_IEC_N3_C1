@@ -1,0 +1,12 @@
+.salto_linea{
+    padding: 15px;
+}
+
+.formulario_principal{
+    margin-top: 15px;
+}
+
+form{
+    border: 1px solid rgb(197, 193, 193);
+    padding: 15px;
+}

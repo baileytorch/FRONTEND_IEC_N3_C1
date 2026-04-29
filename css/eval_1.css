@@ -31,7 +31,7 @@ p{
 }
 
 .banner_superior{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* border-radius: 25px; */
     display: inline-flex;
 }
@@ -50,9 +50,9 @@ p{
     padding-left: 25px;
 }
 
-#principal_izquierda{
+/* #principal_izquierda{
     width: 25%;
-}
+} */
 
 #principal_derecha{
     padding: 5px;
@@ -73,8 +73,4 @@ p{
     border-radius: 50%;
     display: block;
     background-color: aqua;
-}
-
-fa-regular{
-    font-size: 25;
 }
