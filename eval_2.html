@@ -24,10 +24,10 @@
             <div class="col-9">
                 <p>Los campos marcados con asterisco (*) son obligatorios.</p>
                 <form action="" method="post">
-                    <input type="hidden" name="" id="input_oculto">
+                    <input type="hidden" name="" id="input_oculto" value="id_db">
 
                     <label for="fname" class="form-label">* Nombre:</label><br>
-                    <input class="form-control" type="text" id="fname" name="fname" required placeholder="Ingrese su nombre"><br>
+                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
                     
                     <label for="lname" class="form-label">* Apellido:</label><br>
                     <input class="form-control" type="text" id="lname" name="lname" required placeholder="Ingrese su apellido"><br>
@@ -60,7 +60,7 @@
                     <div class="salto_linea"></div>
                     <input type="button" onclick="cambiar_fondo();" class="btn btn-secondary" value="Cambiar Color">
                     <input type="button" onclick="prueba()" class="btn btn-secondary" value="Cancelar">
-                    <input type="submit" onclick="saludar();" class="btn btn-primary" value="Aceptar">
+                    <input type="button" onclick="validarFormulario();" class="btn btn-primary" value="Aceptar">
                 </form>
             </div>
         </div>
