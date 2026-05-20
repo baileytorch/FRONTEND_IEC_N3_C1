@@ -27,20 +27,40 @@
                     <input type="hidden" name="" id="input_oculto" value="id_db">
 
                     <label for="fname" class="form-label">* Nombre:</label><br>
-                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
-                    
+                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Ingrese su nombre"
+                        onchange="elementoValido();">
+                    <div class="invalid-feedback">
+                        Nombre es obligatorio.
+                    </div>
+                    <br>
+
                     <label for="lname" class="form-label">* Apellido:</label><br>
-                    <input class="form-control" type="text" id="lname" name="lname" required placeholder="Ingrese su apellido"><br>
-                    
+                    <input class="form-control" type="text" id="lname" name="lname"
+                        placeholder="Ingrese su apellido" onchange="elementoValido();">
+                    <div class="invalid-feedback">
+                        Apellido es obligatorio.
+                    </div>
+                    <br>
+
                     <label for="rut" class="form-label">* Rut:</label><br>
-                    <input class="form-control" type="text" id="rut" name="rut" required placeholder="Ingrese su rut" minlength="9" maxlength="12"><br>
-                    
+                    <input class="form-control" type="text" id="rut" name="rut" placeholder="Ingrese su rut"
+                        minlength="9" maxlength="12" onchange="elementoValido();">
+                    <div class="invalid-feedback">
+                        Rut es obligatorio.
+                    </div>
+                    <br>
+
                     <label for="fecha_nac" class="form-label">Fecha Nacimiento:</label><br>
-                    <input type="date" id="fecha_nac" name="fecha_nac"><br>
-                    
+                    <input type="date" id="fecha_nac" name="fecha_nac" class="form-control">
+                    <br>
+
                     <label for="email" class="form-label">Email:</label><br>
-                    <input class="form-control" type="email" id="email" name="email" placeholder="Ingrese su email" required><br>
-                    
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Ingrese su email" onchange="elementoValido();">                        
+                    <div class="invalid-feedback">
+                        Email es obligatorio.
+                    </div>
+                    <br>
+
                     <label for="experiencia">Años de Estudio:</label><br>
                     <input type="range" id="experiencia" name="experiencia" min="0" max="10"
                         oninput="this.nextElementSibling.value = this.value"><output></output><br>
