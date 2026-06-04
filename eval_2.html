@@ -7,11 +7,17 @@
     <title>Formulario Inicial</title>
     <link rel="stylesheet" href="./css/vapor.css" />
     <link rel="stylesheet" href="./css/form.css" />
+    <link href="https://cdn.datatables.net/v/dt/dt-2.3.8/datatables.min.css" rel="stylesheet"
+        integrity="sha384-1BvCnyKidMPIGQGjvMn+w+90hHBhYJtF+R7os4NX2Abe7tSxWQadHRTSH5qb559A" crossorigin="anonymous">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="./js/eval_2.js"></script>
+    <script src="./js/jQuery v4.0.0.js"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.8/datatables.min.js"
+        integrity="sha384-kjkli48Tmhwhaghq0IIRm8gFmMdnihfu1ywAOyyGWYMsoZZi/6AX2fWzpsqahoFw"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -95,12 +101,14 @@
                     <div class="row">
                         <div class="col">
                             <label for="inputContrasena" class="form-label">Contraseña:</label>
-                            <input type="password" name="contrasena" id="inputContrasena" class="form-control" onchange="elementoValido()">
+                            <input type="password" name="contrasena" id="inputContrasena" class="form-control"
+                                onchange="elementoValido()">
                             <div class="invalid-feedback">Contraseña es obligatoria.</div>
                         </div>
                         <div class="col">
                             <label for="inputRepetirContrasena" class="form-label">Repetir Contraseña:</label>
-                            <input type="password" name="repetirContrasena" id="inputRepetirContrasena" class="form-control" onchange="elementoValido()">
+                            <input type="password" name="repetirContrasena" id="inputRepetirContrasena"
+                                class="form-control" onchange="elementoValido()">
                             <div class="invalid-feedback">Repetir Contraseña es obligatorio.</div>
                         </div>
                     </div>

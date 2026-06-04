@@ -1,70 +1,69 @@
 function validarFormulario() {
-    let campoNombre = document.getElementById('fname');
-    let campoApellido = document.getElementById('lname');
-    let campoRut = document.getElementById('rut');
-    let campoFechaNacimiento = document.getElementById('fecha_nac');
-    let campoEmail = document.getElementById('email');
-    let campoExperiencia = document.getElementById('experiencia');
-    let campoContrasena = document.getElementById('inputContrasena');
-    let campoRepetirContrasena = document.getElementById('inputRepetirContrasena');
+    let campoNombre = $('#fname');
+    let campoApellido = $('#lname');
+    let campoRut = $('#rut');
+    let campoFechaNacimiento = $('#fecha_nac');
+    let campoEmail = $('#email');
+    let campoExperiencia = $('#experiencia');
+    let campoContrasena = $('#inputContrasena');
+    let campoRepetirContrasena = $('#inputRepetirContrasena');
 
-    if (campoNombre.value == '') {
-        campoNombre.classList.add('is-invalid');
+    if (campoNombre.val() == '') {
+        campoNombre.addClass('is-invalid');
     }
-    if (campoApellido.value == '') {
-        campoApellido.classList.add('is-invalid');
+    if (campoApellido.val() == '') {
+        campoApellido.addClass('is-invalid');
     }
-    if (campoRut.value == '') {
-        campoRut.classList.add('is-invalid');
+    if (campoRut.val() == '') {
+        campoRut.addClass('is-invalid');
     }
-    if (campoEmail.value == '') {
-        campoEmail.classList.add('is-invalid');
+    if (campoEmail.val() == '') {
+        campoEmail.addClass('is-invalid');
     }
-    if (campoContrasena.value == '') {
-        campoContrasena.classList.add('is-invalid');
+    if (campoContrasena.val() == '') {
+        campoContrasena.addClass('is-invalid');
     }
-    if (campoRepetirContrasena.value == '') {
-        campoRepetirContrasena.classList.add('is-invalid');
+    if (campoRepetirContrasena.val() == '') {
+        campoRepetirContrasena.addClass('is-invalid');
     }
 };
 
 function elementoValido() {
-    let campoNombre = document.getElementById('fname');
-    let campoApellido = document.getElementById('lname');
-    let campoRut = document.getElementById('rut');
-    let campoEmail = document.getElementById('email');
-    let campoContrasena = document.getElementById('inputContrasena');
-    let campoRepetirContrasena = document.getElementById('inputRepetirContrasena');
+    let campoNombre = $('#fname');
+    let campoApellido = $('#lname');
+    let campoRut = $('#rut');
+    let campoEmail = $('#email');
+    let campoContrasena = $('#inputContrasena');
+    let campoRepetirContrasena = $('#inputRepetirContrasena');
 
-    if (campoNombre.value != '') {
-        console.log(campoNombre.value)
-        campoNombre.classList.remove('is-invalid');
-        campoNombre.classList.add('is-valid');
+    if (campoNombre.val() != '') {
+        campoNombre.removeClass('is-invalid');
+        campoNombre.addClass('is-valid');
     }
 
-    if (campoApellido.value != '') {
-        campoApellido.classList.remove('is-invalid');
-        campoApellido.classList.add('is-valid');
+    if (campoApellido.val() != '') {
+        campoApellido.removeClass('is-invalid');
+        campoApellido.addClass('is-valid');
     }
 
-    if (campoRut.value != '' && validarRut(campoRut.value)) {
-        campoRut.classList.remove('is-invalid');
-        campoRut.classList.add('is-valid');
+    if (campoRut.val() != '' && validarRut(campoRut.val())) {
+        campoRut.removeClass('is-invalid');
+        campoRut.addClass('is-valid');
     }
 
-    if (campoEmail.value != '' && validarEmail(campoEmail.value)) {
-            campoEmail.classList.remove('is-invalid');
-            campoEmail.classList.add('is-valid');
+    if (campoEmail.val() != '' && validarEmail(campoEmail.val())) {
+            campoEmail.removeClass('is-invalid');
+            campoEmail.addClass('is-valid');
     }
 
-    if (campoContrasena.value != '' && validarContrasena(campoContrasena.value)) {
-        campoContrasena.classList.remove('is-invalid');
-        campoContrasena.classList.add('is-valid');
+    if (campoContrasena.val() != '' && validarContrasena(campoContrasena.val())) {
+        campoContrasena.removeClass('is-invalid');
+        campoContrasena.addClass('is-valid');
     }
 
-    if (campoRepetirContrasena.value != '' && campoRepetirContrasena.value == campoContrasena.value) {
-        campoRepetirContrasena.classList.remove('is-invalid');
-        campoRepetirContrasena.classList.add('is-valid');
+    if (campoRepetirContrasena.val() != '' && campoRepetirContrasena.val() == campoContrasena.val()) {
+        campoRepetirContrasena.removeClass('is-invalid');
+        campoRepetirContrasena.addClass('is-valid');
     }
 }
 
