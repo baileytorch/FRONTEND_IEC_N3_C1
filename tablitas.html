@@ -18,6 +18,7 @@
         integrity="sha384-kjkli48Tmhwhaghq0IIRm8gFmMdnihfu1ywAOyyGWYMsoZZi/6AX2fWzpsqahoFw"
         crossorigin="anonymous"></script>
     <script src="./js/tablitas.js"></script>
+    <script src="./js/dt_language.js"></script>
 </head>
 
 <body>
@@ -50,28 +51,18 @@
         </nav>
 
         <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <select name="datos" id="selectDatos" class="form-select" onchange="seleccionarData()">
+                        <option value="1" selected>Usuarios</option>
+                        <option value="2" selected>Publicaciones</option>
+                        <option value="3" selected>Comentarios</option>
+                        <option value="4" selected>Tareas</option>
+                    </select>
+                </div>
+            </div>
+
             <table id="example" class="display">
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>Nombre</th>
-                        <th>Usuario</th>
-                        <th>Correo</th>
-                        <th>Teléfono</th>
-                        <th>Sitio Web</th>
-                    </tr>
-                </thead>
-                
-                <tfoot>
-                    <tr>
-                        <th>N°</th>
-                        <th>Nombre</th>
-                        <th>Usuario</th>
-                        <th>Correo</th>
-                        <th>Teléfono</th>
-                        <th>Sitio Web</th>
-                    </tr>
-                </tfoot>
             </table>
         </div>
 

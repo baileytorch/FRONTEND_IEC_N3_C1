@@ -15,3 +15,7 @@ form{
     background-color: rgb(235, 206, 235);
     border-color: red;
 }
+
+.navbar{
+    margin-bottom: 15px;
+}
