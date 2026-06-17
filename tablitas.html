@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Tables</title>
-    <link rel="stylesheet" href="./css/vapor.css" />
+    <link rel="stylesheet" href="./css/flatly.css" />
     <link rel="stylesheet" href="./css/form.css" />
     <link href="https://cdn.datatables.net/v/dt/dt-2.3.8/datatables.min.css" rel="stylesheet"
         integrity="sha384-1BvCnyKidMPIGQGjvMn+w+90hHBhYJtF+R7os4NX2Abe7tSxWQadHRTSH5qb559A" crossorigin="anonymous">
@@ -105,7 +105,20 @@
             </div>
 
             <div class="row" id="divTablaTareas">
-                <table id="tablaTareas" class="display"></table>
+                <table id="tablaTareas" class="display">
+                    <thead>
+                        <th>N°</th>
+                        <th>Usuario</th>
+                        <th>Título</th>
+                        <th>Estado</th>
+                    </thead>
+                    <tfoot>
+                        <th>N°</th>
+                        <th>Usuario</th>
+                        <th>Título</th>
+                        <th>Estado</th>
+                    </tfoot>
+                </table>
             </div>
         </div>
 

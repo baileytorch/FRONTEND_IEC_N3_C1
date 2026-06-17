@@ -37,13 +37,14 @@ function seleccionarData() {
             break;
         case '2':
             new DataTable('#tablaPublicaciones', {
+                data: cargarComentarios(),
                 ajax: {
                     url: urlPublicaciones,
                     dataSrc: ''
                 },
                 columns: [
                     { data: 'id' },
-                    { data: 'userId' },
+                    { data: 'name' },
                     { data: 'title' },
                     { data: 'body' },
                 ],
@@ -83,18 +84,30 @@ function seleccionarData() {
                 },
                 columns: [
                     { data: 'id' },
-                    { data: 'name' },
-                    { data: 'username' },
-                    { data: 'email' },
-                    { data: 'phone' },
-                    { data: 'website' }
+                    { data: 'userId' },
+                    { data: 'title' },
+                    { data: 'completed' }
                 ],
                 language: window.lenguaje
             });
-            $('#divTablaUsuarios').hice();
+            $('#divTablaUsuarios').hide();
             $('#divTablaPublicaciones').hide();
             $('#divTablaComentarios').hide();
             $('#divTablaTareas').show();
             break;
     }
+};
+
+async function cargarComentarios() {
+    const [dataPublicaciones, dataUsuarios] = await Promise.all([
+        fetch(urlPublicaciones),
+        fetch(urlUsuarios)
+    ]);
+    const publicaciones = await dataPublicaciones.json();
+    const usuarios = await dataUsuarios.json();
+
+    const dataCombinada = publicaciones.map(publicacion => {
+        const usuarioComentario = usuarios.find(usuario => usuario.id === publicacion.userId);
+        return { publicacion, usuarioComentario };
+    })
 };
